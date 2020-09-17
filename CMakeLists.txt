@@ -7,7 +7,7 @@ endif()
 
 find_package(catkin REQUIRED COMPONENTS roscpp)
 find_package(Eigen3 REQUIRED)
-find_package(suitesparse QUIET)
+find_package(SuiteSparse QUIET)
 if(NOT SuiteSparse_FOUND)
   set(SuiteSparse_LIBRARIES blas lapack cholmod cxsparse)
 endif()
